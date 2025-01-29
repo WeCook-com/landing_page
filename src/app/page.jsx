@@ -1,28 +1,27 @@
 'use client'; // This is a client component 👈🏽
 
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 
 import * as Unicons from '@iconscout/react-unicons';
 
-import Services from './component/Services';
 import About from './component/About';
+import Services from './component/Services';
 import Wrapper from './component/Wrapper';
 
 import './assets/css/tailwind.css';
 import './assets/scss/tailwind.scss';
 
 import './assets/scss/icons.scss';
-import Pricing from './component/Pricing';
 import Blog from './component/Blog';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
-import Portfolio from './component/Portfolio';
-import Review from './component/Testimonial';
+import Pricing from './component/Pricing';
 import Switcher from './component/Switcher';
+import Review from './component/Testimonial';
 
-function Index_three() {
+function HomePage() {
     const [isOpen, setMenu] = useState(true);
     const [scroll, setScroll] = useState(false);
 
@@ -50,22 +49,15 @@ function Index_three() {
                             <Link className="navbar-brand" href="index.html">
                                 <span className="inline-block dark:hidden">
                                     <Image
-                                        src={'/images/logo-dark.png'}
+                                        src="/images/logo-dark.png"
                                         className="inline-block dark:hidden"
-                                        alt=""
-                                        width="100"
-                                        height={10}
-                                    />
-                                    <Image
-                                        src={'/images/logo-light.png'}
-                                        className="hidden dark:inline-block"
                                         alt=""
                                         width="100"
                                         height={10}
                                     />
                                 </span>
                                 <Image
-                                    src={'/images/logo-light.png'}
+                                    src="/images/logo-light.png"
                                     className="hidden dark:inline-block"
                                     alt=""
                                     height={10}
@@ -78,7 +70,7 @@ function Index_three() {
                                     <li className="inline ms-1">
                                         <Link
                                             to="#"
-                                            className="btn btn-sm btn-icon p-1.5  rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white"
+                                            className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
                                         >
                                             <Unicons.UilGithub />
                                         </Link>
@@ -86,7 +78,7 @@ function Index_three() {
                                     <li className="inline ms-1">
                                         <Link
                                             to="#"
-                                            className="btn btn-sm btn-icon  p-1.5 rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white"
+                                            className="btn btn-sm btn-icon  p-1.5 rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
                                         >
                                             <Unicons.UilTwitter />
                                         </Link>
@@ -94,7 +86,7 @@ function Index_three() {
                                     <li className="inline ms-1">
                                         <Link
                                             to="#"
-                                            className="btn btn-sm btn-icon p-1.5  rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white"
+                                            className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
                                         >
                                             <Unicons.UilTwitter />
                                         </Link>
@@ -147,7 +139,7 @@ function Index_three() {
                                     >
                                         <span className="nav-link">Services</span>
                                     </Link>
-                                    <Link
+                                    {/* <Link
                                         className="nav-item"
                                         to="portfolio"
                                         activeclassname="active"
@@ -156,7 +148,7 @@ function Index_three() {
                                         duration={500}
                                     >
                                         <span className="nav-link">Portfolio</span>
-                                    </Link>
+                                    </Link> */}
                                     <Link
                                         className="nav-item"
                                         to="testi"
@@ -202,7 +194,7 @@ function Index_three() {
                         </div>
                     </nav>
                     <section
-                        className="py-36 md:h-auto md:py-0 flex items-center relative bg-orange-600/5 dark:bg-orange-600/10"
+                        className="py-36 md:h-auto md:py-0 flex items-center relative bg-[rgb(59_130_246/0.05)] dark:bg-[rgb(59_130_246/0.1)]"
                         id="home"
                     >
                         <div className="container relative">
@@ -210,19 +202,19 @@ function Index_three() {
                                 <div className="mt-28">
                                     <div>
                                         <h4 className="lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium mb-7 position-relative dark:text-white">
-                                            Unique and bold functionality
+                                            Simplify Your Restaurant Management
                                         </h4>
 
                                         <p className="text-slate-600 dark:text-white/70 opacity-50 mb-0 max-w-2xl text-lg mx-auto">
-                                            Launch your campaign and benefit from our expertise on
-                                            designing and managing conversion centered Tailwind CSS
-                                            html page.
+                                            Effortlessly manage orders, inventory, and staff with an
+                                            all-in-one platform designed to streamline your
+                                            restaurant operations and boost efficiency. 🚀
                                         </p>
 
                                         <div className="relative mt-10">
                                             <Link
                                                 to="#"
-                                                className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md"
+                                                className="btn bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white rounded-md"
                                             >
                                                 Start Free Trail !
                                             </Link>
@@ -247,7 +239,7 @@ function Index_three() {
                     <Services />
 
                     {/* Portfolio section */}
-                    <Portfolio />
+                    {/* <Portfolio /> */}
 
                     {/* Review section */}
                     <Review />
@@ -272,4 +264,4 @@ function Index_three() {
     );
 }
 
-export default Index_three;
+export default HomePage;

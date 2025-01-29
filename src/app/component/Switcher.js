@@ -38,8 +38,8 @@ export default function Switcher() {
                         className="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8"
                         htmlFor="chk"
                     >
-                        <Unicons.UilMoon width="20px" className=" text-yellow-500" />
-                        <Unicons.UilSun width="20px" className=" text-yellow-500" />
+                        <Unicons.UilMoon width="20px" className=" text-[#a3cfff]" />
+                        <Unicons.UilSun width="20px" className=" text-[#a3cfff]" />
                         <span className="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
                     </label>
                 </span>
