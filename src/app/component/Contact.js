@@ -2,7 +2,6 @@
 
 import React from 'react';
 import * as Unicons from '@iconscout/react-unicons';
-import { Link } from 'react-scroll';
 
 export default function Contact() {
     const handleSubmitForm = e => {
@@ -116,12 +115,12 @@ export default function Contact() {
                                         <h5 className="text-lg dark:text-white mb-2 font-medium">
                                             Email
                                         </h5>
-                                        <Link
+                                        <a
                                             href="mailto:contact@koacook.com"
                                             className="text-slate-400"
                                         >
                                             contact@koacook.com
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
