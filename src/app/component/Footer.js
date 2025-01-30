@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="container">
                     <div className="grid md:grid-cols-12 items-center">
                         <div className="md:col-span-3">
-                            <Link href="#" className="logo-footer">
+                            <div href="#" className="logo-footer">
                                 <Image
                                     src={'/images/logo-light.png'}
                                     className="md:ms-0 mx-auto"
@@ -19,7 +19,7 @@ export default function Footer() {
                                     width={105}
                                     height={24}
                                 />
-                            </Link>
+                            </div>
                         </div>
 
                         <div className="md:col-span-5 md:mt-0 mt-8">

@@ -18,7 +18,7 @@ export default function Pricing() {
             id: 2,
             title: 'Pro',
             price: 49, // Monthly price
-            user: 1, // One location
+            user: 10, // One location
             features: [
                 'All Starter features',
                 'Advanced inventory',

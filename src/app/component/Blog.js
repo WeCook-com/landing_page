@@ -12,18 +12,21 @@ export default function Blog() {
             description:
                 "Some quick example text to build on the card title and make up the bulk of the card's content.",
             image: '/images/blog/1.jpg',
+            slug: '5-trends-shaping-the-future-of-restaurants-in-2025',
         },
         {
             id: '2',
             title: 'How to Streamline Operations and Save Time with KoaCook',
             description: 'When an unknown printer took a galley of type and scrambled it.',
             image: '/images/blog/2.jpg',
+            slug: 'how-to-streamline-operations-and-save-time-with-koacook',
         },
         {
             id: '3',
             title: 'The Ultimate Guide to Restaurant Inventory Management',
             description: 'It has survived not only five centuries but leap in typesetting.',
             image: '/images/blog/3.jpg',
+            slug: 'the-ultimate-guide-to-restaurant-inventory-management',
         },
     ];
 
@@ -61,7 +64,7 @@ export default function Blog() {
                                 />
                                 <div className="content p-6 flex flex-col flex-1">
                                     <Link2
-                                        href="#"
+                                        href={`/blogs/${item.slug}`}
                                         className="text-lg hover:text-[#3b82f6] dark:text-white dark:hover:text-[#3b82f6] transition-all duration-500 ease-in-out font-medium"
                                     >
                                         {item.title}
@@ -70,7 +73,7 @@ export default function Blog() {
 
                                     <div className="mt-auto">
                                         <Link
-                                            href="#"
+                                            href={`/blogs/${item.slug}`}
                                             className="inline-flex  btn btn-link hover:text-[#3b82f6] dark:hover:text-[#3b82f6] after:bg-[#3b82f6] dark:text-white transition duration-500"
                                         >
                                             <span>Read More</span>

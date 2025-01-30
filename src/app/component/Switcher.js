@@ -1,3 +1,5 @@
+'use client';
+
 import * as Unicons from '@iconscout/react-unicons';
 
 export default function Switcher() {
