@@ -13,6 +13,7 @@ import Review from './component/Testimonial';
 function HomePage() {
     return (
         <div>
+            <h1 className="opacity-0 fixed -top-screen">KoaCook - Simplify, Streamline, Succeed</h1>
             <section
                 className="py-36 md:h-auto md:py-0 flex items-center relative bg-[rgb(59_130_246/0.05)] dark:bg-[rgb(59_130_246/0.1)]"
                 id="home"
