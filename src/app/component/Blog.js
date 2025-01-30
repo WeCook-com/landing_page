@@ -1,8 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import Link2 from 'next/link';
-import Link from 'next/link';
 import * as Unicons from '@iconscout/react-unicons';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Blog() {
     const blog = [
@@ -54,21 +52,23 @@ export default function Blog() {
                                 key={key}
                                 className="blog relative rounded-md shadow shadow-slate-200 dark:shadow-slate-800 overflow-hidden flex flex-col"
                             >
-                                <Image
-                                    src={item.image}
-                                    alt=""
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                    style={{ width: '100%', height: 'auto' }}
-                                />
+                                <Link href={`/blogs/${item.slug}`}>
+                                    <Image
+                                        src={item.image}
+                                        alt=""
+                                        width={0}
+                                        height={0}
+                                        sizes="100vw"
+                                        style={{ width: '100%', height: 'auto' }}
+                                    />
+                                </Link>
                                 <div className="content p-6 flex flex-col flex-1">
-                                    <Link2
+                                    <Link
                                         href={`/blogs/${item.slug}`}
                                         className="text-lg hover:text-[#3b82f6] dark:text-white dark:hover:text-[#3b82f6] transition-all duration-500 ease-in-out font-medium"
                                     >
                                         {item.title}
-                                    </Link2>
+                                    </Link>
                                     <p className="text-slate-400 mt-3 mb-5">{item.description}</p>
 
                                     <div className="mt-auto">

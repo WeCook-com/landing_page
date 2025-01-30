@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import * as Unicons from '@iconscout/react-unicons';
 import Blog from '@/app/component/Blog';
+import Link from 'next/link';
 
 const BlogDetails = () => {
     return (
@@ -194,12 +195,12 @@ const BlogDetails = () => {
                         </p>
 
                         <div className="mt-6">
-                            <a
-                                href="contactus.html"
+                            <Link
+                                href="/#contact"
                                 className="py-2 px-5 inline-flex items-center font-normal tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white rounded-md"
                             >
                                 <Unicons.UilEnvelope className="inline-block mr-1" /> Contact us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
