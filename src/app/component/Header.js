@@ -91,7 +91,7 @@ const Header = () => {
                                 to="#"
                                 className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
                             >
-                                <Unicons.UilGithub />
+                                <Unicons.UilLinkedin />
                             </Link>
                         </li>
                         <li className="inline ms-1">
@@ -107,7 +107,15 @@ const Header = () => {
                                 to="#"
                                 className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
                             >
-                                <Unicons.UilTwitter />
+                                <Unicons.UilInstagram />
+                            </Link>
+                        </li>
+                        <li className="inline ms-1">
+                            <Link
+                                to="#"
+                                className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
+                            >
+                                <Unicons.UilFacebookF />
                             </Link>
                         </li>
                     </ul>

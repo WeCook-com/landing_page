@@ -56,7 +56,7 @@ export default function Footer() {
                                         target="_blank"
                                         className="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-[#3b82f6] bg-slate-800 dark:bg-gray-900 hover:bg-[#3b82f6] dark:hover:bg-[#3b82f6] text-gray-400 hover:text-white"
                                     >
-                                        <Unicons.UilDribbble width="17px" />
+                                        <Unicons.UilLinkedin width="17px" />
                                     </Link>
                                 </li>
                                 <li className="inline ms-1">
@@ -65,7 +65,7 @@ export default function Footer() {
                                         target="_blank"
                                         className="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-[#3b82f6] bg-slate-800 dark:bg-gray-900 hover:bg-[#3b82f6] dark:hover:bg-[#3b82f6] text-gray-400 hover:text-white"
                                     >
-                                        <Unicons.UilBehance width="17px" />
+                                        <Unicons.UilTwitter width="17px" />
                                     </Link>
                                 </li>
                                 <li className="inline ms-1">
@@ -74,7 +74,7 @@ export default function Footer() {
                                         target="_blank"
                                         className="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-[#3b82f6] bg-slate-800 dark:bg-gray-900 hover:bg-[#3b82f6] dark:hover:bg-[#3b82f6] text-gray-400 hover:text-white"
                                     >
-                                        <Unicons.UilLinkedin width="17px" />
+                                        <Unicons.UilInstagram width="17px" />
                                     </Link>
                                 </li>
                                 <li className="inline ms-1">
@@ -84,24 +84,6 @@ export default function Footer() {
                                         className="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-[#3b82f6] bg-slate-800 dark:bg-gray-900 hover:bg-[#3b82f6] dark:hover:bg-[#3b82f6] text-gray-400 hover:text-white"
                                     >
                                         <Unicons.UilFacebookF width="17px" />
-                                    </Link>
-                                </li>
-                                <li className="inline ms-1">
-                                    <Link
-                                        href="https://www.instagram.com/shreethemes/"
-                                        target="_blank"
-                                        className="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-[#3b82f6] bg-slate-800 dark:bg-gray-900 hover:bg-[#3b82f6] dark:hover:bg-[#3b82f6] text-gray-400 hover:text-white"
-                                    >
-                                        <Unicons.UilInstagram width="17px" />
-                                    </Link>
-                                </li>
-                                <li className="inline ms-1">
-                                    <Link
-                                        href="https://twitter.com/shreethemes"
-                                        target="_blank"
-                                        className="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-[#3b82f6] bg-slate-800 dark:bg-gray-900 hover:bg-[#3b82f6] dark:hover:bg-[#3b82f6] text-gray-400 hover:text-white"
-                                    >
-                                        <Unicons.UilTwitter width="17px" />
                                     </Link>
                                 </li>
                             </ul>
