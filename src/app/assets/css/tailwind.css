@@ -1167,6 +1167,9 @@ h6,
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
     }
+    .nav-item {
+        cursor: pointer;
+    }
 
     /* Custom */
     .navbar.in-blog.is-sticky .navigation .navbar-nav .nav-link {

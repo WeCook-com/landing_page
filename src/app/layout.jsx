@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" dir="LTR">
-            <body className={`${rubic.variable}`}>
+            <body className={`${rubic.variable} scroll-smooth`}>
                 <Wrapper>
                     <Header />
                     {children}

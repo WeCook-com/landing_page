@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Link } from 'react-scroll';
+import Link from 'next/link';
 
 import About from './component/About';
 import Blog from './component/Blog';
@@ -33,10 +33,10 @@ function HomePage() {
 
                                 <div className="relative mt-10">
                                     <Link
-                                        to="#"
+                                        href="/#contact"
                                         className="btn bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white rounded-md"
                                     >
-                                        Start Free Trail !
+                                        Start Free Trail!
                                     </Link>
                                 </div>
                             </div>
