@@ -46,7 +46,7 @@ const BlogDetails = () => {
                                 />
 
                                 <div className="mt-6">
-                                    <h1 className="text-2xl font-bold text-gray-800 mb-4">
+                                    <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                                         The Ultimate Guide to Restaurant Inventory Management
                                     </h1>
                                     <p className="text-slate-400 mb-4">
@@ -59,7 +59,7 @@ const BlogDetails = () => {
                                         of automating your inventory processes with modern tools.
                                     </p>
 
-                                    <h2 className="text-xl font-semibold text-gray-700 mt-6">
+                                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">
                                         Why Is Inventory Management Important?
                                     </h2>
                                     <p className="text-slate-400 mt-3">
@@ -73,7 +73,7 @@ const BlogDetails = () => {
                                         the right time.
                                     </p>
 
-                                    <h2 className="text-xl font-semibold text-gray-700 mt-6">
+                                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">
                                         Key Components of Restaurant Inventory Management
                                     </h2>
                                     <p className="text-slate-400 mt-3">
@@ -102,7 +102,7 @@ const BlogDetails = () => {
                                         </li>
                                     </ul>
 
-                                    <h2 className="text-xl font-semibold text-gray-700 mt-6">
+                                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">
                                         How Automation Can Help Your Inventory System
                                     </h2>
                                     <p className="text-slate-400 mt-3">
@@ -116,7 +116,7 @@ const BlogDetails = () => {
                                         waste.
                                     </p>
 
-                                    <h2 className="text-xl font-semibold text-gray-700 mt-6">
+                                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">
                                         Best Practices for Restaurant Inventory Management
                                     </h2>
                                     <p className="text-slate-400 mt-3">
@@ -153,7 +153,7 @@ const BlogDetails = () => {
                                         </p>
                                     </div>
 
-                                    <h2 className="text-xl font-semibold text-gray-700 mt-6">
+                                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">
                                         Benefits of Effective Inventory Management
                                     </h2>
                                     <p className="text-slate-400 mt-3">
@@ -183,7 +183,7 @@ const BlogDetails = () => {
                                         </li>
                                     </ul>
 
-                                    <h2 className="text-xl font-semibold text-gray-700 mt-6">
+                                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">
                                         Conclusion
                                     </h2>
                                     <p className="text-slate-400 mt-3">

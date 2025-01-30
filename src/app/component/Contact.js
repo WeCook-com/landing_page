@@ -57,7 +57,7 @@ export default function Contact() {
                                         <div className="mb-5">
                                             <select
                                                 name="service"
-                                                className="w-full h-10 px-2 py-2 rounded-[4px] border border-solid border-[rgb(229,231,235)] text-[#9ca3af]"
+                                                className="w-full h-10 px-2 py-2 rounded-[4px] border border-solid border-[rgb(229,231,235)] dark:border-[rgb(31_41_55)] text-[#9ca3af] bg-transparent"
                                             >
                                                 <option value="" disabled selected>
                                                     Choose the service you're interested in:

@@ -46,7 +46,7 @@ const BlogDetails = () => {
                                 />
 
                                 <div className="mt-6">
-                                    <h1 className="text-2xl font-bold text-gray-800 mb-4">
+                                    <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                                         How to Streamline Operations and Save Time with KoaCook
                                     </h1>
                                     <p className="text-slate-400 mb-4">
@@ -61,7 +61,7 @@ const BlogDetails = () => {
                                         time.
                                     </p>
 
-                                    <h2 className="text-xl font-semibold text-gray-700 mt-6">
+                                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">
                                         Automated Order Management
                                     </h2>
                                     <p className="text-slate-400 mt-3">
@@ -74,7 +74,7 @@ const BlogDetails = () => {
                                         communication between kitchen and front-of-house staff.
                                     </p>
 
-                                    <h2 className="text-xl font-semibold text-gray-700 mt-6">
+                                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">
                                         Inventory Tracking & Alerts
                                     </h2>
                                     <p className="text-slate-400 mt-3">
@@ -96,7 +96,7 @@ const BlogDetails = () => {
                                         </p>
                                     </div>
 
-                                    <h2 className="text-xl font-semibold text-gray-700 mt-6">
+                                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">
                                         Efficient Staff Scheduling
                                     </h2>
                                     <p className="text-slate-400 mt-3">
@@ -108,7 +108,7 @@ const BlogDetails = () => {
                                         chance of scheduling conflicts.
                                     </p>
 
-                                    <h2 className="text-xl font-semibold text-gray-700 mt-6">
+                                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">
                                         Customer Engagement & Marketing
                                     </h2>
                                     <p className="text-slate-400 mt-3">
