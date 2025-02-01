@@ -42,7 +42,7 @@ function HomePage() {
                                 </div>
                             </div>
                             <Image
-                                src="/images/bg/laptop.png"
+                                src="/images/bg/laptop1.png"
                                 alt=""
                                 width={1200}
                                 height={700}

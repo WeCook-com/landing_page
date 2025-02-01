@@ -1,12 +1,67 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import * as Unicons from '@iconscout/react-unicons';
 
 export default function Contact() {
-    const handleSubmitForm = e => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        service: '',
+        message: '',
+    });
+    const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState(false);
+
+    const validateForm = () => {
+        let errors = {};
+        if (!formData.name.trim()) {
+            errors.name = 'Name is required.';
+        }
+        if (!formData.email.trim()) {
+            errors.email = 'Email is required.';
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            errors.email = 'Enter a valid email.';
+        }
+        if (!formData.message.trim()) {
+            errors.message = 'Message cannot be empty.';
+        }
+        setErrors(errors);
+        return Object.keys(errors).length === 0;
+    };
+
+    const handleChange = e => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async e => {
         e.preventDefault();
-        console.log(e.target.elements.name.value);
+        if (!validateForm()) return;
+
+        setLoading(true);
+
+        try {
+            const response = await fetch('/api/sendEmail', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setSuccess(true);
+                setFormData({ name: '', email: '', service: '', message: '' });
+                setErrors({});
+            } else {
+                setErrors({ apiError: data.message });
+            }
+        } catch (err) {
+            setErrors({ apiError: 'Something went wrong, please try again.' });
+        }
+
+        setLoading(false);
     };
 
     return (
@@ -30,7 +85,7 @@ export default function Contact() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-6">
                         <div className="lg:col-span-8">
                             <div className="p-6 rounded-md shadow bg-white dark:bg-slate-900">
-                                <form onSubmit={handleSubmitForm}>
+                                <form onSubmit={handleSubmit}>
                                     <div className="grid lg:grid-cols-12 lg:gap-6">
                                         <div className="lg:col-span-6 mb-5">
                                             <input
@@ -39,7 +94,14 @@ export default function Contact() {
                                                 type="text"
                                                 className="form-input"
                                                 placeholder="Name:"
+                                                value={formData.name}
+                                                onChange={handleChange}
                                             />
+                                            {errors.name && (
+                                                <p className="text-red-500 text-sm mt-1">
+                                                    {errors.name}
+                                                </p>
+                                            )}
                                         </div>
 
                                         <div className="lg:col-span-6 mb-5">
@@ -49,7 +111,14 @@ export default function Contact() {
                                                 type="email"
                                                 className="form-input"
                                                 placeholder="Email:"
+                                                value={formData.email}
+                                                onChange={handleChange}
                                             />
+                                            {errors.email && (
+                                                <p className="text-red-500 text-sm mt-1">
+                                                    {errors.email}
+                                                </p>
+                                            )}
                                         </div>
                                     </div>
 
@@ -58,8 +127,10 @@ export default function Contact() {
                                             <select
                                                 name="service"
                                                 className="w-full h-10 px-2 py-2 rounded-[4px] border border-solid border-[rgb(229,231,235)] dark:border-[rgb(31_41_55)] text-[#9ca3af] bg-transparent"
+                                                value={formData.service}
+                                                onChange={handleChange}
                                             >
-                                                <option value="" disabled selected>
+                                                <option value="" disabled>
                                                     Choose the service you're interested in:
                                                 </option>
                                                 <option value="order-management">
@@ -89,17 +160,34 @@ export default function Contact() {
                                                 id="message"
                                                 className="form-input textarea h-28"
                                                 placeholder="Message:"
+                                                value={formData.message}
+                                                onChange={handleChange}
                                             ></textarea>
+                                            {errors.message && (
+                                                <p className="text-red-500 text-sm mt-1">
+                                                    {errors.message}
+                                                </p>
+                                            )}
                                         </div>
                                     </div>
+
                                     <button
                                         type="submit"
                                         id="submit"
                                         name="send"
-                                        className="btn bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white rounded-md h-11 justify-center flex items-center"
+                                        className="btn disabled:opacity-70 disabled:pointer-events-none disabled:cursor-progress bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white rounded-md h-11 justify-center flex items-center"
+                                        disabled={loading}
                                     >
-                                        Send Message
+                                        {loading ? 'Sending...' : 'Send Message'}
                                     </button>
+                                    {success && (
+                                        <p className="text-green-600 mt-2">
+                                            Send message successfully.
+                                        </p>
+                                    )}
+                                    {errors.apiError && (
+                                        <p className="text-red-600 mt-2">{errors.apiError}</p>
+                                    )}
                                 </form>
                             </div>
                         </div>
