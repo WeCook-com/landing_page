@@ -67,7 +67,7 @@ export default function Review() {
     return (
         <>
             {/* Review Start  */}
-            <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="testi">
+            <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="review">
                 <div className="container">
                     <div className="grid grid-cols-1 pb-8 text-center">
                         <h6 className="text-[#3b82f6] text-base font-medium uppercase mb-2">

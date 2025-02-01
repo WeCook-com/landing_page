@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Link } from 'react-scroll';
+import Link from 'next/link';
 
 import About from './component/About';
 import Blog from './component/Blog';
@@ -13,6 +13,7 @@ import Review from './component/Testimonial';
 function HomePage() {
     return (
         <div>
+            <h1 className="opacity-0 fixed -top-screen">KoaCook - Simplify, Streamline, Succeed</h1>
             <section
                 className="py-36 md:h-auto md:py-0 flex items-center relative bg-[rgb(59_130_246/0.05)] dark:bg-[rgb(59_130_246/0.1)]"
                 id="home"
@@ -33,10 +34,10 @@ function HomePage() {
 
                                 <div className="relative mt-10">
                                     <Link
-                                        to="#"
+                                        href="/#contact"
                                         className="btn bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white rounded-md"
                                     >
-                                        Start Free Trail !
+                                        Start Free Trail!
                                     </Link>
                                 </div>
                             </div>

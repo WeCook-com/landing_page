@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Link } from 'react-scroll';
+import Link from 'next/link';
 
 import ModalVideo from 'react-modal-video';
 import '../../../node_modules/react-modal-video/scss/modal-video.scss';
@@ -27,13 +27,12 @@ export default function About() {
                                     style={{ width: '100%', height: 'auto' }} // optional
                                 />
                                 <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
-                                    <Link
-                                        to="#"
+                                    <button
                                         onClick={() => setOpen(true)}
                                         className="lightbox h-20 w-20 rounded-full shadow-lg shadow-slate-100 dark:shadow-slate-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-[#3b82f6] cursor-pointer"
                                     >
                                         <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                                    </Link>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +60,7 @@ export default function About() {
 
                                 <div className="relative mt-10">
                                     <Link
-                                        href="#portfolio"
+                                        href="/#contact"
                                         className="btn bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white rounded-md"
                                     >
                                         View Portfolio

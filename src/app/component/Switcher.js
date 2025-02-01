@@ -1,22 +1,18 @@
 'use client';
 
 import * as Unicons from '@iconscout/react-unicons';
+import { useEffect } from 'react';
 
 export default function Switcher() {
-    const changeMode = (mode, event) => {
+    const changeMode = mode => {
         switch (mode) {
             case 'mode':
                 if (document.documentElement.className.includes('dark')) {
                     document.documentElement.className = 'light';
+                    localStorage.setItem('theme', 'light');
                 } else {
                     document.documentElement.className = 'dark';
-                }
-                break;
-            case 'layout':
-                if (event.target?.innerText === 'LTR') {
-                    document.documentElement.dir = 'ltr';
-                } else {
-                    document.documentElement.dir = 'rtl';
+                    localStorage.setItem('theme', 'dark');
                 }
                 break;
 
@@ -24,6 +20,16 @@ export default function Switcher() {
                 break;
         }
     };
+
+    useEffect(() => {
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme === 'dark') {
+            document.documentElement.className = 'dark'; // Apply saved theme
+        } else if (savedTheme === 'light') {
+            document.documentElement.className = 'light'; // Default to light mode
+        }
+    }, []);
 
     return (
         <>
@@ -46,26 +52,6 @@ export default function Switcher() {
                     </label>
                 </span>
             </div>
-            {/* <!-- Switcher --> */}
-
-            {/* <!-- LTR & RTL Mode Code --> */}
-            {/* <div className="fixed top-1/3 -right-3 z-50">
-        <Link to="#" id="switchRtl">
-          <span
-            className="py-1 px-3 relative inline-block cursor-pointer rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold rtl:block ltr:hidden"
-            onClick={(event) => changeMode("layout", event)}
-          >
-            LTR
-          </span>
-          <span
-            className="py-1 px-3 relative inline-block cursor-pointer rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold ltr:block rtl:hidden"
-            onClick={(event) => changeMode("layout", event)}
-          >
-            RTL
-          </span>
-        </Link>
-      </div> */}
-            {/* <!-- LTR & RTL Mode Code --> */}
         </>
     );
 }

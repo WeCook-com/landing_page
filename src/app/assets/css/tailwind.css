@@ -1167,6 +1167,9 @@ h6,
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
     }
+    .nav-item {
+        cursor: pointer;
+    }
 
     /* Custom */
     .navbar.in-blog.is-sticky .navigation .navbar-nav .nav-link {
@@ -1734,7 +1737,7 @@ h6,
     color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 .form-input:focus {
-    border-color: rgb(234 88 12 / 0.5);
+    border-color: rgb(59 130 246 / 0.5);
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),

@@ -67,7 +67,7 @@ export default function Pricing() {
                                             Basic features for up to {item.user} users.
                                         </p>
                                         <Link
-                                            href="#"
+                                            href="#contact"
                                             className="btn bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white rounded-md w-full"
                                         >
                                             Started Now
@@ -106,7 +106,7 @@ export default function Pricing() {
                                         c
                                     </p>
                                     <Link
-                                        href="#"
+                                        href="#contact"
                                         className="btn bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white rounded-md w-full"
                                     >
                                         Started Now

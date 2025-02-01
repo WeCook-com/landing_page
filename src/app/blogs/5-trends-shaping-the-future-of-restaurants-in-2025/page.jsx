@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import * as Unicons from '@iconscout/react-unicons';
 import Blog from '@/app/component/Blog';
+import Link from 'next/link';
 
 const BlogDetails = () => {
     return (
@@ -10,9 +11,9 @@ const BlogDetails = () => {
 
                 <div className="container">
                     <div className="grid grid-cols-1 pb-8 text-center mt-10">
-                        <h3 className="mb-3 font-medium leading-normal text-3xl mt-10 text-white">
+                        <div className="mb-3 font-medium leading-normal text-3xl mt-10 text-white">
                             5 Trends Shaping the Future of Restaurants in 2025
-                        </h3>
+                        </div>
 
                         <ul className="list-none mt-6">
                             <li className="inline-block text-white/50 mx-5">
@@ -45,26 +46,113 @@ const BlogDetails = () => {
                                 />
 
                                 <div className="mt-6">
-                                    <p className="text-slate-400">
-                                        The most well-known dummy text is the 'Lorem Ipsum', which
-                                        is said to have originated in the 16th century. Lorem Ipsum
-                                        is composed in a pseudo-Latin language which more or less
-                                        corresponds to 'proper' Latin. It contains a series of real
-                                        Latin words. This ancient dummy text is also
-                                        incomprehensible, but it imitates the rhythm of most
-                                        European languages in Latin script.
+                                    <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+                                        5 Trends Shaping the Future of Restaurants in 2025
+                                    </h1>
+                                    <p className="text-slate-400 mt-4">
+                                        The restaurant industry is evolving faster than ever, with
+                                        technology, customer preferences, and global challenges
+                                        driving innovation. As we step into 2025, here are five key
+                                        trends that will redefine how restaurants operate and serve
+                                        their customers.
                                     </p>
-                                    <p className="text-slate-400 italic border-x-4 border-[#3b82f6]  rounded-ss-xl rounded-ee-xl mt-3 p-3">
-                                        " There are many variations of passages of Lorem Ipsum
-                                        available, but the majority have suffered alteration in some
-                                        form, by injected humour, or randomised words which don't
-                                        look even slightly believable. "
+
+                                    {/* Trend 1 */}
+                                    <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mt-6">
+                                        1. AI-Powered Automation & Smart Kitchens
+                                    </h2>
+                                    <p className="text-slate-400 mt-2">
+                                        Artificial Intelligence (AI) is revolutionizing restaurant
+                                        operations, from automating order-taking with AI chatbots to
+                                        optimizing ingredient usage with smart inventory systems.
+                                        Many restaurants are integrating robotic chefs, predictive
+                                        ordering systems, and AI-driven menu suggestions to
+                                        streamline efficiency and reduce food waste.
                                     </p>
-                                    <p className="text-slate-400 mt-3">
-                                        The advantage of its Latin origin and the relative
-                                        meaninglessness of Lorum Ipsum is that the text does not
-                                        attract attention to itself or distract the viewer's
-                                        attention from the layout.
+                                    <p className="text-slate-400 italic border-x-4 border-blue-500 rounded-ss-xl rounded-ee-xl mt-3 p-3">
+                                        "Restaurants using AI-powered kitchen assistants have
+                                        reported a 30% increase in efficiency and reduced
+                                        operational costs."
+                                    </p>
+
+                                    {/* Trend 2 */}
+                                    <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mt-6">
+                                        2. Hyper-Personalized Dining Experiences
+                                    </h2>
+                                    <p className="text-slate-400 mt-2">
+                                        With the rise of data analytics and machine learning,
+                                        restaurants are offering hyper-personalized experiences to
+                                        customers. AI-driven customer insights help restaurants
+                                        tailor recommendations, loyalty rewards, and even meal
+                                        customization based on dietary preferences and past orders.
+                                    </p>
+                                    <p className="text-slate-400 mt-2">
+                                        Personalized marketing campaigns and smart POS systems allow
+                                        restaurants to engage customers with special offers, making
+                                        dining experiences more relevant and enjoyable.
+                                    </p>
+
+                                    {/* Trend 3 */}
+                                    <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mt-6">
+                                        3. The Rise of Ghost Kitchens & Virtual Brands
+                                    </h2>
+                                    <p className="text-slate-400 mt-2">
+                                        Ghost kitchens (delivery-only restaurants) are booming due
+                                        to the increasing demand for food delivery. These kitchens
+                                        operate without traditional dine-in spaces, allowing
+                                        businesses to focus on efficiency and cost-effectiveness.
+                                    </p>
+                                    <p className="text-slate-400 mt-2">
+                                        Virtual brands—restaurants that exist solely online—are
+                                        leveraging social media and food delivery apps to attract
+                                        customers, often experimenting with different cuisines and
+                                        concepts without the risk of high overhead costs.
+                                    </p>
+
+                                    {/* Trend 4 */}
+                                    <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mt-6">
+                                        4. Sustainable & Eco-Friendly Practices
+                                    </h2>
+                                    <p className="text-slate-400 mt-2">
+                                        Sustainability is no longer optional; it’s a necessity.
+                                        Restaurants are adopting eco-friendly practices like
+                                        zero-waste cooking, biodegradable packaging, and locally
+                                        sourced ingredients.
+                                    </p>
+                                    <p className="text-slate-400 italic border-x-4 border-blue-500 rounded-ss-xl rounded-ee-xl mt-3 p-3">
+                                        "A 2025 study shows that 73% of consumers prefer dining at
+                                        eco-conscious restaurants that prioritize sustainability."
+                                    </p>
+
+                                    {/* Trend 5 */}
+                                    <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mt-6">
+                                        5. Blockchain for Food Safety & Transparency
+                                    </h2>
+                                    <p className="text-slate-400 mt-2">
+                                        Blockchain technology is being integrated into restaurant
+                                        supply chains to enhance food safety and transparency.
+                                        Customers can scan QR codes to trace the origin of their
+                                        food, ensuring quality and ethical sourcing.
+                                    </p>
+                                    <p className="text-slate-400 mt-2">
+                                        This trend is especially significant in high-end restaurants
+                                        and health-conscious markets, where trust and authenticity
+                                        are crucial to customer decisions.
+                                    </p>
+
+                                    {/* Conclusion */}
+                                    <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mt-6">
+                                        Final Thoughts
+                                    </h2>
+                                    <p className="text-slate-400 mt-2">
+                                        The restaurant industry in 2025 will be more tech-driven,
+                                        sustainable, and customer-focused than ever. Restaurants
+                                        that embrace these trends will stay ahead of the competition
+                                        and provide exceptional dining experiences.
+                                    </p>
+                                    <p className="text-slate-400 mt-2">
+                                        What do you think about these trends? Are you ready for the
+                                        future of dining? Share your thoughts in the comments!
                                     </p>
                                 </div>
                             </div>
@@ -80,7 +168,7 @@ const BlogDetails = () => {
                                                 id="name"
                                                 type="text"
                                                 className="form-input"
-                                                placeholder="Name :"
+                                                placeholder="Name:"
                                             />
                                         </div>
 
@@ -90,7 +178,7 @@ const BlogDetails = () => {
                                                 id="email"
                                                 type="email"
                                                 className="form-input"
-                                                placeholder="Email :"
+                                                placeholder="Email:"
                                             />
                                         </div>
 
@@ -99,7 +187,7 @@ const BlogDetails = () => {
                                                 name="comments"
                                                 id="comments"
                                                 className="form-input textarea h-28"
-                                                placeholder="Message :"
+                                                placeholder="Message:"
                                             ></textarea>
                                         </div>
 
@@ -125,7 +213,7 @@ const BlogDetails = () => {
                                 </h5>
                                 <div className="text-center mt-8">
                                     <Image
-                                        src="/images/client/04.jpg"
+                                        src="/images/logo_no_text.png"
                                         className="h-24 w-24 mx-auto rounded-full shadow mb-4"
                                         alt=""
                                         width={96}
@@ -133,9 +221,8 @@ const BlogDetails = () => {
                                     />
 
                                     <div className="text-lg font-medium transition-all duration-500 ease-in-out h5">
-                                        Cristina Romsey
+                                        KoaCook
                                     </div>
-                                    <p className="text-slate-400">Content Writer</p>
                                 </div>
 
                                 <h5 className="text-lg font-medium bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">
@@ -194,12 +281,12 @@ const BlogDetails = () => {
                         </p>
 
                         <div className="mt-6">
-                            <a
-                                href="contactus.html"
+                            <Link
+                                href="/#contact"
                                 className="py-2 px-5 inline-flex items-center font-normal tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white rounded-md"
                             >
                                 <Unicons.UilEnvelope className="inline-block mr-1" /> Contact us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

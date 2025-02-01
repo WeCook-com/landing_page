@@ -44,7 +44,7 @@ export default function Services() {
     return (
         <>
             {/* Start */}
-            <section id="features" className="relative md:py-24 py-16">
+            <section id="services" className="relative md:py-24 py-16">
                 <div className="container lg mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 pb-8 items-center">
                         <div>

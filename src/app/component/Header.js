@@ -1,18 +1,45 @@
 'use client';
 
 import Image from 'next/image';
-import { Link } from 'react-scroll';
+import Link from 'next/link';
 import * as Unicons from '@iconscout/react-unicons';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
+const sections = ['home', 'about', 'services', 'review', 'pricing', 'blog', 'contact'];
+
 const Header = () => {
     const pathname = usePathname();
+    const [activeSection, setActiveSection] = useState('');
     const [isOpen, setMenu] = useState(true);
     const [scroll, setScroll] = useState(false);
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.35, // 35% of the section must be visible to trigger
+        };
+
+        const observerCallback = entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        sections.forEach(section => {
+            const element = document.getElementById(section);
+            if (element) observer.observe(element);
+        });
+
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
+        if (window && typeof window !== 'undefined') {
             window.addEventListener('scroll', () => {
                 setScroll(window.scrollY > 50);
             });
@@ -34,18 +61,18 @@ const Header = () => {
             id="navbar"
         >
             <div className="container flex flex-wrap items-center justify-end">
-                <Link className="navbar-brand" href="index.html">
+                <Link className="navbar-brand" href="/">
                     {!pathname.includes('/blogs/') ? (
                         <>
                             <span className="inline-block dark:hidden">
-                                <Image src="/images/logo-dark.png" alt="" width="100" height={10} />
+                                <Image src="/images/logo-dark.png" alt="" width={100} height={10} />
                             </span>
                             <span className="hidden dark:inline-block">
                                 <Image
                                     src="/images/logo-light.png"
                                     alt=""
                                     height={10}
-                                    width="100"
+                                    width={100}
                                 />
                             </span>
                         </>
@@ -57,7 +84,7 @@ const Header = () => {
                                         <Image
                                             src="/images/logo-dark.png"
                                             alt=""
-                                            width="100"
+                                            width={100}
                                             height={10}
                                         />
                                     </span>
@@ -66,7 +93,7 @@ const Header = () => {
                                             src="/images/logo-light.png"
                                             alt=""
                                             height={10}
-                                            width="100"
+                                            width={100}
                                         />
                                     </span>
                                 </>
@@ -75,7 +102,7 @@ const Header = () => {
                                     <Image
                                         src="/images/logo-light.png"
                                         alt=""
-                                        width="100"
+                                        width={100}
                                         height={10}
                                     />
                                 </span>
@@ -87,36 +114,24 @@ const Header = () => {
                 <div className="nav-icons flex items-center lg_992:order-2 ms-auto">
                     <ul className="list-none menu-social mb-0">
                         <li className="inline ms-1">
-                            <Link
-                                to="#"
-                                className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
-                            >
+                            <a className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white">
                                 <Unicons.UilLinkedin />
-                            </Link>
+                            </a>
                         </li>
                         <li className="inline ms-1">
-                            <Link
-                                to="#"
-                                className="btn btn-sm btn-icon  p-1.5 rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
-                            >
+                            <a className="btn btn-sm btn-icon  p-1.5 rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white">
                                 <Unicons.UilTwitter />
-                            </Link>
+                            </a>
                         </li>
                         <li className="inline ms-1">
-                            <Link
-                                to="#"
-                                className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
-                            >
+                            <a className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white">
                                 <Unicons.UilInstagram />
-                            </Link>
+                            </a>
                         </li>
                         <li className="inline ms-1">
-                            <Link
-                                to="#"
-                                className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
-                            >
+                            <a className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white">
                                 <Unicons.UilFacebookF />
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                     <button
@@ -136,86 +151,16 @@ const Header = () => {
                     id="menu-collapse"
                 >
                     <ul className="navbar-nav" id="navbar-navlist">
-                        <Link
-                            className="nav-item"
-                            to="home"
-                            activeclassname="active"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                        >
-                            <span className="nav-link">Home</span>
-                        </Link>
-                        <Link
-                            className="nav-item"
-                            activeclassname="active"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            to="about"
-                        >
-                            <span className="nav-link">About us</span>
-                        </Link>
-                        <Link
-                            className="nav-item"
-                            to="features"
-                            activeclassname="active"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                        >
-                            <span className="nav-link">Services</span>
-                        </Link>
-                        {/* <Link
-                                        className="nav-item"
-                                        to="portfolio"
-                                        activeclassname="active"
-                                        spy={true}
-                                        smooth={true}
-                                        duration={500}
-                                    >
-                                        <span className="nav-link">Portfolio</span>
-                                    </Link> */}
-                        <Link
-                            className="nav-item"
-                            to="testi"
-                            activeclassname="active"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                        >
-                            <span className="nav-link">Review</span>
-                        </Link>
-                        <Link
-                            className="nav-item"
-                            to="pricing"
-                            activeclassname="active"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                        >
-                            <span className="nav-link">Pricing</span>
-                        </Link>
-                        <Link
-                            className="nav-item"
-                            to="blog"
-                            activeclassname="active"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                        >
-                            <span className="nav-link">Blog</span>
-                        </Link>
-                        <Link
-                            className="nav-item"
-                            to="contact"
-                            activeclassname="active"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                        >
-                            <span className="nav-link">Contact us</span>
-                        </Link>
+                        {sections.map(section => (
+                            <li
+                                key={section}
+                                className={`nav-item ${activeSection === section ? 'active' : ''}`}
+                            >
+                                <Link href={`/#${section}`} className="nav-link">
+                                    {section.charAt(0).toUpperCase() + section.slice(1)}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>
