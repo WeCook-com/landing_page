@@ -131,7 +131,7 @@ export default function Contact() {
                                                 onChange={handleChange}
                                             >
                                                 <option value="" disabled>
-                                                    Choose the service you're interested in:
+                                                    {`Choose the service you're interested in:`}
                                                 </option>
                                                 <option value="order-management">
                                                     Order Management

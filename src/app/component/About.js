@@ -48,14 +48,15 @@ export default function About() {
                                 </h3>
 
                                 <p className="text-slate-400 dark:text-slate-300 max-w-2xl mx-auto">
-                                    At <strong className="font-medium">KoaCook</strong>, we believe
+                                    At <strong className="font-medium">KoaCook</strong>
+                                    {`, we believe
                                     running a restaurant should be as enjoyable as serving your
                                     customers. That’s why we’re developing a cutting-edge restaurant
                                     admin panel to help you streamline daily operations, manage
                                     staff, track orders, and grow your business—all from one
                                     powerful platform.<br></br> Whether you're running a cozy café
                                     or a bustling restaurant chain, KoaCook is here to empower you
-                                    with the tools you need to thrive.
+                                    with the tools you need to thrive.`}
                                 </p>
 
                                 <div className="relative mt-10">
