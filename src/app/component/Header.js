@@ -114,22 +114,42 @@ const Header = () => {
                 <div className="nav-icons flex items-center lg_992:order-2 ms-auto">
                     <ul className="list-none menu-social mb-0">
                         <li className="inline ms-1">
-                            <a className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white">
+                            <a
+                                href="https://www.linkedin.com/company/koacookofficial/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
+                            >
                                 <Unicons.UilLinkedin />
                             </a>
                         </li>
                         <li className="inline ms-1">
-                            <a className="btn btn-sm btn-icon  p-1.5 rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white">
+                            <a
+                                href="https://x.com/koacookofficial"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-sm btn-icon  p-1.5 rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
+                            >
                                 <Unicons.UilTwitter />
                             </a>
                         </li>
                         <li className="inline ms-1">
-                            <a className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white">
+                            <a
+                                href="https://www.instagram.com/koacookofficial"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
+                            >
                                 <Unicons.UilInstagram />
                             </a>
                         </li>
                         <li className="inline ms-1">
-                            <a className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white">
+                            <a
+                                href="https://www.facebook.com/koacookofficial"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-sm btn-icon p-1.5  rounded-full bg-[#3b82f6] hover:bg-[#2563eb] border-[#3b82f6] hover:border-[#2563eb] text-white"
+                            >
                                 <Unicons.UilFacebookF />
                             </a>
                         </li>

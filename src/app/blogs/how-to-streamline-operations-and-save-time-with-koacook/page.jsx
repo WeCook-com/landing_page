@@ -205,7 +205,9 @@ const BlogDetails = () => {
                                 <ul className="list-none text-center mt-8 gap-1 flex justify-center">
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.linkedin.com/company/koacookofficial/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilLinkedin className="h-5 w-5" />
@@ -213,7 +215,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://x.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilTwitter className="h-5 w-5" />
@@ -221,7 +225,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.instagram.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilInstagram className="h-5 w-5" />
@@ -229,7 +235,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.facebook.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilFacebookF className="h-5 w-5" />
