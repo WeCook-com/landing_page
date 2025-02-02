@@ -121,11 +121,11 @@ const BlogDetails = () => {
 
                                     <div className="italic border-x-4 border-[#3b82f6] rounded-ss-xl rounded-ee-xl mt-6 p-4">
                                         <p className="text-slate-400">
-                                            "In the restaurant business, time is money. By using
+                                            {`"In the restaurant business, time is money. By using
                                             KoaCook, I’ve been able to automate tasks that
                                             previously took up to an hour each day, allowing me to
                                             focus more on delivering an exceptional customer
-                                            experience."
+                                            experience."`}
                                         </p>
                                     </div>
 

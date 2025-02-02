@@ -102,9 +102,9 @@ const BlogDetails = () => {
                                         streamline efficiency and reduce food waste.
                                     </p>
                                     <p className="text-slate-400 italic border-x-4 border-blue-500 rounded-ss-xl rounded-ee-xl mt-3 p-3">
-                                        "Restaurants using AI-powered kitchen assistants have
+                                        {`"Restaurants using AI-powered kitchen assistants have
                                         reported a 30% increase in efficiency and reduced
-                                        operational costs."
+                                        operational costs."`}
                                     </p>
 
                                     {/* Trend 2 */}
@@ -152,8 +152,8 @@ const BlogDetails = () => {
                                         sourced ingredients.
                                     </p>
                                     <p className="text-slate-400 italic border-x-4 border-blue-500 rounded-ss-xl rounded-ee-xl mt-3 p-3">
-                                        "A 2025 study shows that 73% of consumers prefer dining at
-                                        eco-conscious restaurants that prioritize sustainability."
+                                        {`"A 2025 study shows that 73% of consumers prefer dining at
+                                        eco-conscious restaurants that prioritize sustainability."`}
                                     </p>
 
                                     {/* Trend 5 */}

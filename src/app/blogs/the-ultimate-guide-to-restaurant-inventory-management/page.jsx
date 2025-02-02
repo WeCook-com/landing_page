@@ -180,9 +180,9 @@ const BlogDetails = () => {
 
                                     <div className="italic border-x-4 border-[#3b82f6] rounded-ss-xl rounded-ee-xl mt-6 p-4">
                                         <p className="text-slate-400">
-                                            "A well-managed inventory system allows restaurant
+                                            {`"A well-managed inventory system allows restaurant
                                             owners and staff to focus more on what matters –
-                                            creating an exceptional dining experience for guests."
+                                            creating an exceptional dining experience for guests."`}
                                         </p>
                                     </div>
 

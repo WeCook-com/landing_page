@@ -42,9 +42,9 @@ export default function Pricing() {
                         </h3>
 
                         <p className="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">
-                            Whether you're just starting out or running multiple locations, we have
+                            {` Whether you're just starting out or running multiple locations, we have
                             a flexible solution for you. Prices are subject to change, but we’re
-                            here to help you find the perfect fit.
+                            here to help you find the perfect fit.`}
                         </p>
                     </div>
 
