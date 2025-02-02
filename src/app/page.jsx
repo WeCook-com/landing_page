@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,6 +7,36 @@ import Contact from './component/Contact';
 import Pricing from './component/Pricing';
 import Services from './component/Services';
 import Review from './component/Testimonial';
+
+export const metadata = {
+    title: 'KoaCook - Simplify, Streamline, Succeed',
+    description: 'All-in-one powerful platform to manage your restaurant efficiently. 🚀',
+    keywords: 'restaurant management, BnB, inventory, reservations',
+    alternates: {
+        canonical: 'https://koacook.com',
+    },
+    openGraph: {
+        title: 'KoaCook - Simplify, Streamline, Succeed',
+        description: 'All-in-one powerful platform to manage your restaurant efficiently. 🚀',
+        url: 'https://koacook.com',
+        siteName: 'KoaCook',
+        images: [
+            {
+                url: 'https://koacook.com/images/banner.png',
+                width: 800,
+                height: 500,
+                alt: 'KoaCook Banner',
+            },
+        ],
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'KoaCook - Simplify, Streamline, Succeed',
+        description: 'All-in-one powerful platform to manage your restaurant efficiently. 🚀',
+        images: ['https://koacook.com/images/banner.png'],
+    },
+};
 
 function HomePage() {
     return (

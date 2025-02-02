@@ -3,6 +3,39 @@ import * as Unicons from '@iconscout/react-unicons';
 import Blog from '@/app/component/Blog';
 import Link from 'next/link';
 
+export const metadata = {
+    title: 'The Ultimate Guide to Restaurant Inventory Management - KoaCook',
+    description:
+        'Managing inventory effectively is one of the most critical aspects of running a successful restaurant. An optimized inventory system ensures that you never run out of essential ingredients, prevents wastage, and helps control costs. In this ultimate guide to restaurant inventory management, we’ll explore essential tips, strategies, and the benefits of automating your inventory processes with modern tools.',
+    alternates: {
+        canonical:
+            'https://koacook.com/blogs/the-ultimate-guide-to-restaurant-inventory-management',
+    },
+    openGraph: {
+        title: 'The Ultimate Guide to Restaurant Inventory Management - KoaCook',
+        description:
+            'Managing inventory effectively is one of the most critical aspects of running a successful restaurant. An optimized inventory system ensures that you never run out of essential ingredients, prevents wastage, and helps control costs. In this ultimate guide to restaurant inventory management, we’ll explore essential tips, strategies, and the benefits of automating your inventory processes with modern tools.',
+        url: 'https://koacook.com/blogs/the-ultimate-guide-to-restaurant-inventory-management',
+        siteName: 'KoaCook',
+        images: [
+            {
+                url: 'https://koacook.com/images/blog/3.jpg',
+                width: 800,
+                height: 500,
+                alt: 'KoaCook Banner',
+            },
+        ],
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'The Ultimate Guide to Restaurant Inventory Management - KoaCook',
+        description:
+            'Managing inventory effectively is one of the most critical aspects of running a successful restaurant. An optimized inventory system ensures that you never run out of essential ingredients, prevents wastage, and helps control costs. In this ultimate guide to restaurant inventory management, we’ll explore essential tips, strategies, and the benefits of automating your inventory processes with modern tools.',
+        images: ['https://koacook.com/images/blog/3.jpg'],
+    },
+};
+
 const BlogDetails = () => {
     return (
         <div>
