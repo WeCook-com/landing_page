@@ -3,6 +3,38 @@ import * as Unicons from '@iconscout/react-unicons';
 import Blog from '@/app/component/Blog';
 import Link from 'next/link';
 
+export const metadata = {
+    title: '5 Trends Shaping the Future of Restaurants in 2025 - KoaCook',
+    description:
+        'The restaurant industry is evolving faster than ever, with technology, customer preferences, and global challenges driving innovation. As we step into 2025, here are five key trends that will redefine how restaurants operate and serve their customers.',
+    alternates: {
+        canonical: 'https://koacook.com/blogs/5-trends-shaping-the-future-of-restaurants-in-2025',
+    },
+    openGraph: {
+        title: '5 Trends Shaping the Future of Restaurants in 2025 - KoaCook',
+        description:
+            'The restaurant industry is evolving faster than ever, with technology, customer preferences, and global challenges driving innovation. As we step into 2025, here are five key trends that will redefine how restaurants operate and serve their customers.',
+        url: 'https://koacook.com/blogs/5-trends-shaping-the-future-of-restaurants-in-2025',
+        siteName: 'KoaCook',
+        images: [
+            {
+                url: 'https://koacook.com/images/blog/1.jpg',
+                width: 1041,
+                height: 679,
+                alt: 'KoaCook Banner',
+            },
+        ],
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: '5 Trends Shaping the Future of Restaurants in 2025 - KoaCook',
+        description:
+            'The restaurant industry is evolving faster than ever, with technology, customer preferences, and global challenges driving innovation. As we step into 2025, here are five key trends that will redefine how restaurants operate and serve their customers.',
+        images: ['https://koacook.com/images/blog/1.jpg'],
+    },
+};
+
 const BlogDetails = () => {
     return (
         <div>
@@ -231,7 +263,9 @@ const BlogDetails = () => {
                                 <ul className="list-none text-center mt-8 gap-1 flex justify-center">
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.linkedin.com/company/koacookofficial/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilLinkedin className="h-5 w-5" />
@@ -239,7 +273,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://x.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilTwitter className="h-5 w-5" />
@@ -247,7 +283,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.instagram.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilInstagram className="h-5 w-5" />
@@ -255,7 +293,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.facebook.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilFacebookF className="h-5 w-5" />

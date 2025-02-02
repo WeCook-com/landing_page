@@ -27,13 +27,14 @@ export default function Footer() {
                                 <p className="text-gray-400">
                                     © {new Date().getFullYear()} KoaCook. Design & Develop with{' '}
                                     <i className="mdi mdi-heart text-[#2563eb]"></i> by{' '}
-                                    <Link
+                                    <a
                                         href="https://jameskaois.com/"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="text-reset"
                                     >
                                         James Cao
-                                    </Link>
+                                    </a>
                                     .
                                 </p>
                             </div>
@@ -51,40 +52,44 @@ export default function Footer() {
                   </Link>
                 </li> */}
                                 <li className="inline ms-1">
-                                    <Link
-                                        href="https://dribbble.com/shreethemes"
+                                    <a
+                                        href="https://www.linkedin.com/company/koacookofficial/"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-[#3b82f6] bg-slate-800 dark:bg-gray-900 hover:bg-[#3b82f6] dark:hover:bg-[#3b82f6] text-gray-400 hover:text-white"
                                     >
                                         <Unicons.UilLinkedin width="17px" />
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li className="inline ms-1">
-                                    <Link
-                                        href="https://www.behance.net/shreethemes"
+                                    <a
+                                        href="https://x.com/koacookofficial"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-[#3b82f6] bg-slate-800 dark:bg-gray-900 hover:bg-[#3b82f6] dark:hover:bg-[#3b82f6] text-gray-400 hover:text-white"
                                     >
                                         <Unicons.UilTwitter width="17px" />
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li className="inline ms-1">
-                                    <Link
-                                        href="http://linkedin.com/company/shreethemes"
+                                    <a
+                                        href="https://www.instagram.com/koacookofficial"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-[#3b82f6] bg-slate-800 dark:bg-gray-900 hover:bg-[#3b82f6] dark:hover:bg-[#3b82f6] text-gray-400 hover:text-white"
                                     >
                                         <Unicons.UilInstagram width="17px" />
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li className="inline ms-1">
-                                    <Link
-                                        href="https://www.facebook.com/shreethemes"
+                                    <a
+                                        href="https://www.facebook.com/koacookofficial"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-[#3b82f6] bg-slate-800 dark:bg-gray-900 hover:bg-[#3b82f6] dark:hover:bg-[#3b82f6] text-gray-400 hover:text-white"
                                     >
                                         <Unicons.UilFacebookF width="17px" />
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>

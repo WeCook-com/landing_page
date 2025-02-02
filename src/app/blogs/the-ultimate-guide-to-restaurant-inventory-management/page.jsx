@@ -3,6 +3,39 @@ import * as Unicons from '@iconscout/react-unicons';
 import Blog from '@/app/component/Blog';
 import Link from 'next/link';
 
+export const metadata = {
+    title: 'The Ultimate Guide to Restaurant Inventory Management - KoaCook',
+    description:
+        'Managing inventory effectively is one of the most critical aspects of running a successful restaurant. An optimized inventory system ensures that you never run out of essential ingredients, prevents wastage, and helps control costs. In this ultimate guide to restaurant inventory management, we’ll explore essential tips, strategies, and the benefits of automating your inventory processes with modern tools.',
+    alternates: {
+        canonical:
+            'https://koacook.com/blogs/the-ultimate-guide-to-restaurant-inventory-management',
+    },
+    openGraph: {
+        title: 'The Ultimate Guide to Restaurant Inventory Management - KoaCook',
+        description:
+            'Managing inventory effectively is one of the most critical aspects of running a successful restaurant. An optimized inventory system ensures that you never run out of essential ingredients, prevents wastage, and helps control costs. In this ultimate guide to restaurant inventory management, we’ll explore essential tips, strategies, and the benefits of automating your inventory processes with modern tools.',
+        url: 'https://koacook.com/blogs/the-ultimate-guide-to-restaurant-inventory-management',
+        siteName: 'KoaCook',
+        images: [
+            {
+                url: 'https://koacook.com/images/blog/3.jpg',
+                width: 800,
+                height: 500,
+                alt: 'KoaCook Banner',
+            },
+        ],
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'The Ultimate Guide to Restaurant Inventory Management - KoaCook',
+        description:
+            'Managing inventory effectively is one of the most critical aspects of running a successful restaurant. An optimized inventory system ensures that you never run out of essential ingredients, prevents wastage, and helps control costs. In this ultimate guide to restaurant inventory management, we’ll explore essential tips, strategies, and the benefits of automating your inventory processes with modern tools.',
+        images: ['https://koacook.com/images/blog/3.jpg'],
+    },
+};
+
 const BlogDetails = () => {
     return (
         <div>
@@ -273,7 +306,9 @@ const BlogDetails = () => {
                                 <ul className="list-none text-center mt-8 gap-1 flex justify-center">
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.linkedin.com/company/koacookofficial/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilLinkedin className="h-5 w-5" />
@@ -281,7 +316,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://x.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilTwitter className="h-5 w-5" />
@@ -289,7 +326,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.instagram.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilInstagram className="h-5 w-5" />
@@ -297,7 +336,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.facebook.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilFacebookF className="h-5 w-5" />

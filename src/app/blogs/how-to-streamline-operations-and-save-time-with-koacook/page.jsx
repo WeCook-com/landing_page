@@ -3,6 +3,39 @@ import * as Unicons from '@iconscout/react-unicons';
 import Blog from '@/app/component/Blog';
 import Link from 'next/link';
 
+export const metadata = {
+    title: 'How to Streamline Operations and Save Time with KoaCook - KoaCook',
+    description:
+        'In today’s fast-paced restaurant industry, managing operations efficiently can make all the difference in providing a seamless customer experience and boosting profitability. With the increasing need for restaurant management systems, KoaCook stands out as a powerful tool that helps restaurant owners streamline their daily operations. Whether it’s managing orders, inventory, or staff, KoaCook simplifies these processes and saves valuable time.',
+    alternates: {
+        canonical:
+            'https://koacook.com/blogs/how-to-streamline-operations-and-save-time-with-koacook',
+    },
+    openGraph: {
+        title: 'How to Streamline Operations and Save Time with KoaCook - KoaCook',
+        description:
+            'In today’s fast-paced restaurant industry, managing operations efficiently can make all the difference in providing a seamless customer experience and boosting profitability. With the increasing need for restaurant management systems, KoaCook stands out as a powerful tool that helps restaurant owners streamline their daily operations. Whether it’s managing orders, inventory, or staff, KoaCook simplifies these processes and saves valuable time.',
+        url: 'https://koacook.com/blogs/how-to-streamline-operations-and-save-time-with-koacook',
+        siteName: 'KoaCook',
+        images: [
+            {
+                url: 'https://koacook.com/images/blog/2.jpg',
+                width: 800,
+                height: 500,
+                alt: 'KoaCook Banner',
+            },
+        ],
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'How to Streamline Operations and Save Time with KoaCook - KoaCook',
+        description:
+            'In today’s fast-paced restaurant industry, managing operations efficiently can make all the difference in providing a seamless customer experience and boosting profitability. With the increasing need for restaurant management systems, KoaCook stands out as a powerful tool that helps restaurant owners streamline their daily operations. Whether it’s managing orders, inventory, or staff, KoaCook simplifies these processes and saves valuable time.',
+        images: ['https://koacook.com/images/blog/2.jpg'],
+    },
+};
+
 const BlogDetails = () => {
     return (
         <div>
@@ -205,7 +238,9 @@ const BlogDetails = () => {
                                 <ul className="list-none text-center mt-8 gap-1 flex justify-center">
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.linkedin.com/company/koacookofficial/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilLinkedin className="h-5 w-5" />
@@ -213,7 +248,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://x.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilTwitter className="h-5 w-5" />
@@ -221,7 +258,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.instagram.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilInstagram className="h-5 w-5" />
@@ -229,7 +268,9 @@ const BlogDetails = () => {
                                     </li>
                                     <li className="inline">
                                         <a
-                                            href=""
+                                            href="https://www.facebook.com/koacookofficial"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="h-8 w-8 inline-flex items-center text-center justify-center text-base font-normal tracking-wide align-middle transition duration-500 ease-in-out border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-[#3b82f6] hover:text-white hover:bg-[#3b82f6]"
                                         >
                                             <Unicons.UilFacebookF className="h-5 w-5" />
