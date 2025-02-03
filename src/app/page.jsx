@@ -9,7 +9,7 @@ import Services from './component/Services';
 import Review from './component/Testimonial';
 
 export const metadata = {
-    title: 'KoaCook - Simplify, Streamline, Succeed',
+    title: 'KoaCook - Simplify Your Restaurant Management',
     description: 'All-in-one powerful platform to manage your restaurant efficiently. 🚀',
     keywords: 'restaurant management, BnB, inventory, reservations',
     alternates: {
