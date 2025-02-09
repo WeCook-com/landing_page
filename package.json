@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "@iconscout/react-unicons": "^2.2.1",
-        "autoprefixer": "10.4.14",
+        "autoprefixer": "10.4.20",
         "eslint": "8.43.0",
         "eslint-config-next": "13.4.6",
         "next": "13.4.6",
